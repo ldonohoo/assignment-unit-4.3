@@ -101,7 +101,7 @@ function removeItem(item) {
     } else {
         console.log('-----------------------------------------');
         // splice the item out of basket
-        removedItem = basket.splice(indexOfItem, indexOfItem+1);
+        removedItem = basket.splice(indexOfItem, indexOfItem);
         removedItem = removedItem.toString();
         console.log(`Removing item '${removedItem}' from basket:`);
         console.log(`  new contents of basket:`);
