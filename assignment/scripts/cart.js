@@ -100,14 +100,10 @@ function removeItem(item) {
         console.log('-----------------------------------------');
     } else {
         console.log('-----------------------------------------');
-        // slice the item basket[indexOfItem] out of the array
-        removedItem = basket.slice(indexOfItem, indexOfItem+1);
+        // splice the item out of basket
+        removedItem = basket.splice(indexOfItem, indexOfItem+1);
         removedItem = removedItem.toString();
         console.log(`Removing item '${removedItem}' from basket:`);
-        // splice the removed item out of the basket array
-        //   (take out the chunk starting at basket[indexOfItem] with 
-        //    length of 1)
-        basket.splice(indexOfItem, 1);
         console.log(`  new contents of basket:`);
         listItems();
         console.log(`(returning removed item '${removedItem}')`);
